@@ -1,0 +1,7 @@
+[console_scripts]
+bb-freeze = bbfreeze:main
+bbfreeze = bbfreeze:main
+
+[distutils.commands]
+bdist_bbfreeze = bbfreeze.bdist_bbfreeze:bdist_bbfreeze
+

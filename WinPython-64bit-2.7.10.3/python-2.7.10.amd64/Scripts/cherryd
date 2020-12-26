@@ -1,0 +1,4 @@
+#!"C:\Users\a0193102\Desktop\reduced_tps6598x Tools\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\python.exe"
+# EASY-INSTALL-SCRIPT: 'CherryPy==3.2.3','cherryd'
+__requires__ = 'CherryPy==3.2.3'
+__import__('pkg_resources').run_script('CherryPy==3.2.3', 'cherryd')

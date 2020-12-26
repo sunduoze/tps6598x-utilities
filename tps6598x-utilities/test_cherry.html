@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Cherry</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Test Cherry</h1>
+    <p id="p1"></p>
+    <button type="button" onclick="callHelloWorld()">hello_world</button>
+    <script>
+
+
+        function callHelloWorld() {
+            $.get('/hello_world', function (data, status) {
+                alert('data:' + data)
+                alert('status:' + status)
+
+            })
+        }
+
+
+
+    </script>
+</body>
+
+</html>

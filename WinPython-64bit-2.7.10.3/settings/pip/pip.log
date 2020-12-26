@@ -1,0 +1,34 @@
+------------------------------------------------------------
+C:\Users\a0193102\Desktop\reduced_tps6598x Tools\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\Scripts\pip run on 01/21/16 16:35:54
+Downloading/unpacking pyusb
+  Getting page https://pypi.python.org/simple/pyusb/
+  URLs to search for versions for pyusb:
+  * https://pypi.python.org/simple/pyusb/
+  Analyzing links from page https://pypi.python.org/simple/pyusb/
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a2.tar.gz#md5=f6bed3e9b8a869a0043c36366ff28a14 (from https://pypi.python.org/simple/pyusb/), version: 1.0.0a2
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a2.zip#md5=530240f21aabf1fa9a69739a1e0c9389 (from https://pypi.python.org/simple/pyusb/), version: 1.0.0a2
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a3.tar.gz#md5=28f72453a7c0562cb8bd572758f6f7e1 (from https://pypi.python.org/simple/pyusb/), version: 1.0.0a3
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a3.zip#md5=45a5ba190ca7a86fe71cfe9f6fb3065e (from https://pypi.python.org/simple/pyusb/), version: 1.0.0a3
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0b1.tar.gz#md5=5cc9c7dd77b4d12fcc22fee3b39844bc (from https://pypi.python.org/simple/pyusb/), version: 1.0.0b1
+    Found link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0b2.tar.gz#md5=bc12e83ff3ef1045d4306d13a9955fc1 (from https://pypi.python.org/simple/pyusb/), version: 1.0.0b2
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a2.tar.gz#md5=f6bed3e9b8a869a0043c36366ff28a14 (from https://pypi.python.org/simple/pyusb/), version 1.0.0a2 is a pre-release (use --pre to allow).
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a2.zip#md5=530240f21aabf1fa9a69739a1e0c9389 (from https://pypi.python.org/simple/pyusb/), version 1.0.0a2 is a pre-release (use --pre to allow).
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a3.tar.gz#md5=28f72453a7c0562cb8bd572758f6f7e1 (from https://pypi.python.org/simple/pyusb/), version 1.0.0a3 is a pre-release (use --pre to allow).
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0a3.zip#md5=45a5ba190ca7a86fe71cfe9f6fb3065e (from https://pypi.python.org/simple/pyusb/), version 1.0.0a3 is a pre-release (use --pre to allow).
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0b1.tar.gz#md5=5cc9c7dd77b4d12fcc22fee3b39844bc (from https://pypi.python.org/simple/pyusb/), version 1.0.0b1 is a pre-release (use --pre to allow).
+  Ignoring link https://pypi.python.org/packages/source/p/pyusb/pyusb-1.0.0b2.tar.gz#md5=bc12e83ff3ef1045d4306d13a9955fc1 (from https://pypi.python.org/simple/pyusb/), version 1.0.0b2 is a pre-release (use --pre to allow).
+  Could not find a version that satisfies the requirement pyusb (from versions: 1.0.0a2, 1.0.0a2, 1.0.0a3, 1.0.0a3, 1.0.0b1, 1.0.0b2)
+Cleaning up...
+  Removing temporary dir c:\users\a0193102\appdata\local\temp\pip_build_a0193102...
+No distributions matching the version for pyusb
+Exception information:
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\pip\basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "C:\Python27\lib\site-packages\pip\commands\install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "C:\Python27\lib\site-packages\pip\req.py", line 1177, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "C:\Python27\lib\site-packages\pip\index.py", line 322, in find_requirement
+    raise DistributionNotFound('No distributions matching the version for %s' % req)
+DistributionNotFound: No distributions matching the version for pyusb

@@ -1,0 +1,69 @@
+.jquery-slider.ui-slider {
+    margin: 1em 2em 1em;
+}
+
+.jquery-slider .ui-slider-handle {
+    margin-left: -9px;
+}
+
+.jquery-slider .ui-slider-pip .ui-slider-line {
+    background: #fffaf7;
+}
+
+.jquery-slider .ui-slider-pip.ui-slider-pip-last,
+.jquery-slider .ui-slider-pip.ui-slider-pip-first {
+    top: -10px;
+}
+
+.jquery-slider .ui-slider-pip.ui-slider-pip-last .ui-slider-label,
+.jquery-slider .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
+    margin: 0;
+}
+
+.jquery-slider .ui-slider-pip.ui-slider-pip-first .ui-slider-label {
+    left: -5.2em;
+    text-align: right;
+}
+
+.jquery-slider .ui-slider-pip.ui-slider-pip-last .ui-slider-label {
+    left: 2em;
+    text-align: left;
+}
+
+.jquery-slider .ui-slider-handle .ui-slider-tip {
+    font-size: 1.05em;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    left: -50px;
+    background: white;
+    border-color: #aaaaaa;
+}
+
+.jquery-slider .ui-slider-pips [class*=i-slider-pip-selected] {
+    color: #000000;
+}
+
+.jquery_slider_minus_button
+{
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    background-image: url("./../resources/images/minus_button.png");
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.jquery_slider_plus_button
+{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    float: right;
+    background-size: contain;
+    background-image: url("./../resources/images/plus_button.png");
+}
