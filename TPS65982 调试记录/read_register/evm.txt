@@ -1,0 +1,249 @@
+TPS65982 Debug Tool Version 2.0
+
+I2C Bitrate set to 400 kHz
+SPI Bitrate set to 8000 kHz
+
+Vendor ID (0x0)
+        [31:0]   Device ID   0x00000028
+
+Device ID (0x1)
+        [31:0]   Device ID   0x31454341
+
+Unique ID (0x5)
+        [127:0]   Device ID   0x574ab6fe7ac04eaab90ba89000116350L
+
+MODE    APP
+
+
+VERSION          0001.07.09
+
+
+Device Info     TPS65982 HW0011 FW0001.07.09 ZBPK1
+
+
+Customer Use    0x55aaL
+
+
+Boot Flags (0x2d)
+        [0:0]     BootOk                      True
+        [1:1]     ExtPhvSwitch                True
+        [2:2]     DeadBatteryFlag             True
+        [3:3]     SpiFlashPresent             True
+        [4:4]     Region0                     True
+        [5:5]     Region1                     False
+        [6:6]     Region0Invalid              False
+        [7:7]     Region1Invalid              False
+        [8:8]     Region0FlashErr             False
+        [9:9]     Region1FlashErr             False
+        [11:11]   UartCRCFail                 False
+        [12:12]   Region0CRCFail              False
+        [13:13]   Region1CRCFail              False
+        [14:14]   CustomerOTPInvalid          False
+        [16:15]   OneCallI2COtpBits           0x1
+        [17:17]   App Cust Version Error      False
+        [18:18]   App Cust Length Error       True
+        [19:19]   App Cust CRC Error          False
+        [22:22]   Debug Ctl 1 state at boot   low
+        [23:23]   Debug Ctl 2 state at boot   low
+        [26:24]   DevNumber                   0
+        [27:27]   UartBoot                    False
+        [28:28]   UartOverflowErr             False
+        [29:29]   IntPhvSwitch                False
+        [30:30]   UartRetryErr                False
+        [31:31]   UartTimeoutErr              False
+        [33:32]   OTPValid                    2
+        [34:34]   SWD Disable                 False
+        [36:36]   Vout3v3Ctl                  True
+        [37:37]   WaitForVin3V3               False
+        [41:40]   OneCallI2cOtpBits           1
+        [54:50]   Vout3v3Threshold            6
+        [67:64]   REV_ID_Metal                1
+        [71:68]   REV_ID_Base                 1
+
+Status (0x1a)
+        [0:0]     PlugPresent            True
+        [3:1]     ConnState              No_Ra
+        [4:4]     PlugOrientation        Upside_Down_CC_on_CC2
+        [5:5]     PortRole               PullDown_Active_or_Port_Disabled
+        [6:6]     DataRole               DFP
+        [7:7]     VconnEnabled           False
+        [9:8]     PP5V_Switch            Disabled
+        [11:10]   PPHV_Switch            Disabled
+        [13:12]   PPHVE_Switch           Enabled Reverse current from Power Path to VBUS blocked (acting as input)
+        [15:14]   PPCABLE_Switch         Disabled
+        [16:16]   OvercurrentCondition   False
+        [17:17]   HighVoltageCondition   False
+        [19:18]   PowerSource            VBUS
+        [21:20]   VBUSStatus             VBUS at negotiated voltage
+        [23:22]   UsbHostPresent         UsbHost_Vbus_from_PD_Device
+        [25:24]   ActingAsLegacy         Not acting as legacy (PD Active)
+        [26:26]   GoToMinActive          False
+        [27:27]   Bist                   False
+        [28:28]   HighVoltageWarning     False
+        [29:29]   LowVoltageWarning      False
+
+Data Status (0x5f)
+        [0:0]     DataConnection               connected
+        [3:1]     ConnectionOrient             Up side down
+        [2:2]     ActiveCable                  Passive cable
+        [3:3]     Overcurrent                  off
+        [4:4]     USB2Connection               connected
+        [5:5]     USB3Connection               connected
+        [6:6]     USB3Speed                    USB Gen 1 (5 GBps)
+        [8:8]     DPConnection                 False
+        [11:10]   DPPinAssignment              E/F
+        [16:16]   TBTConnection                False
+        [19:17]   TBT Cable Type               No Thunderbolt Connection
+        [23:23]   ForceLSX                     False
+        [25:25]   TBT Gen1 (10 Gbps) support   0
+        [26:26]   TBT Gen2 (20 Gbps) support   0
+
+Control Config (0x29)
+        [1:0]     DisablePD                 Normal USB-PD Behavior
+        [2:2]     ExternallyPowered         True
+        [4:4]     ProcessSwapToSink         Enabled
+        [5:5]     InitSwapToSink            Enabled
+        [6:6]     ProcessSwapToSource       Enabled
+        [7:7]     InitSwapToSource          Disabled
+        [8:8]     RDOIntrusiveMode          Disabled
+        [9:9]     PDOIntrusiveMode          Disabled
+        [10:10]   ProcessVconnSwap          Enabled
+        [11:11]   InitiateVconnSwap         Disabled
+        [12:12]   ProcessSwapToUFP          Enabled
+        [13:13]   InitiateSwapToUFP         Disabled
+        [14:14]   ProcessSwapToDFP          Enabled
+        [15:15]   InitiateSwapToDFP         Enabled
+        [24:24]   AutomaticIDRequest        Enabled
+        [25:25]   AMIntrusiveMode           Disabled
+        [31:31]   ForceUSBGen1              off
+        [34:32]   I2C Timeout               0
+        [35:35]   AC Adapter Swap Disable   Disabled
+
+System Config (0x28)
+        [2:0]       PortInfo                           PROVIDER_CONSUMER_CCIPU_CCPD
+        [5:3]       ReceptacleType                     UsbReceptacle_STD_FULL_TypeC_Receptacle
+        [7:6]       TypeCCurrent                       CC_IPU_3P0A
+        [9:8]       VCONNsupported                     VconnConfig_DFP_UFP
+        [14:14]     HighVoltageWarningLevel            False
+        [15:15]     LowVoltageWarningLevel             False
+        [21:16]     OvpTripPoint (in mV)               24000
+        [23:22]     OVPUsage                           OvpUsageType_OvpTripPoint
+        [25:24]     PP_5V0config                       SwitchConfig_AS_OUT
+        [27:26]     PP_HVconfig                        SwitchConfig_AS_OUT
+        [30:28]     PP_HVEconfig                       SwitchConfig_AS_IN
+        [32:32]     BC12enable                         Disabled
+        [33:33]     USBEPenable                        Enabled
+        [34:34]     USBRPenable                        Enabled
+        [36:35]     USB3rate                           SSSignallingSupport_USB3p2_Gen1_Gen2
+        [38:38]     AudioAccessorySupport              False
+        [39:39]     DebugAccessorySupport              False
+        [40:40]     PoweredAccessorySupport            False
+        [41:41]     RSense                             10 mOhm PP_HVE current sense resisitor
+        [42:42]     TrySRCSupport                      Disabled
+        [43:43]     BillboardAllowed                   True
+        [49:46]     PP_EXT Overcurrent Clamp Timeout   10 uS
+        [50:50]     PP_EXT Overcurrent Clamp Enable    Disabled
+        [56:51]     ResetZTimeoutCount                 2
+        [58:57]     ResetZTimeoutClock                 1
+        [61:59]     Vout3V3SupThresh                   Assert RESETZ if VOUT_3v3 < 2.75 V
+        [62:62]     Vout3V3enable                      Enabled
+        [64:64]     sinkSenseCCDisconnect              Disabled
+        [66:66]     setUvpTo4P5V                       Disabled
+        [69:67]     UvpTripPoint5V                     20%
+        [72:70]     UvpTripPointHV                     20%
+        [79:79]     UART Disabled                      False
+        [80:80]     Serial String Present              False
+        [82:81]     Product String Index               0
+        [84:83]     Manufacturer String Index          0
+        [87:85]     Billboard URL String Index         0
+        [91:88]     TBT Billboard String Index         0
+        [99:96]     DP Billboard String Index          0
+        [107:104]   Custom 1 Billboard String          0
+        [111:108]   Custom 2 Billboard String          0
+        [115:112]   Custom 3 Billboard String          0
+        [119:116]   Custom 4 Billboard String          0
+        [123:120]   PP_5V Overcurrent Clamp Timeout    10 uS
+        [124:124]   PP_5V Overcurrent Clamp Enable     Disabled
+        [131:128]   PP_HV Overcurrent Clamp Timeout    10 uS
+        [132:132]   PP_HV Overcurrent Clamp Enable     Disabled
+
+System Power Register (0x20)
+        [7:0]   System Power State   S0
+
+Power Status (0x3f)
+        [0:0]   PowerConnection   connected
+        [1:1]   SourceSink        TPS65982 is sink
+        [3:2]   Type-C Current    PD contract
+        [4:4]   BC12Detection     Disabled
+        [6:5]   BC12Status        SDP
+
+PD Status (0x40)
+        [1:0]     PlugDetails     USB type-C fully featured plug
+        [3:2]     CCPullUp        3A current
+        [5:4]     PortType        Consumer/Provider
+        [6:6]     PresentRole     Sink
+        [12:8]    SoftResetType   SoftResetType_InitializePlug_SOP_DPrime
+        [21:16]   HardResetType   HardReset_None
+
+Active PDO (0x34)
+        [9:0]     MaxCurrent or Power    3000 mA (Max Current)
+        [19:10]   Min Voltage or Power   5000 mV
+        [31:30]   Supply Type            Fixed
+        [33:32]   Peak current           PeakCurrentType_100PercentIOC
+        [38:38]   USBCommCapable         True
+        [39:39]   Externally Powred      False
+        [40:40]   USBSuspendSupported    False
+        [41:41]   Dual Role              True
+
+Active RDO (0x35)
+        [9:0]     Max/Min Operating Current or Power   0
+        [19:10]   Operating Current or Power           0
+        [24:24]   No USB Suspend                       True
+        [25:25]   USB Communications Capable           True
+        [26:26]   Capability Mismatch                  False
+        [27:27]   Give Back Flag                       False
+        [30:28]   Object Position                      1
+
+Sink Request RDO (0x36)
+        [9:0]     Max/Min Operating Current or Power   0
+        [19:10]   Operating Current or Power           0
+        [24:24]   No USB Suspend                       False
+        [25:25]   USB Communications Capable           False
+        [26:26]   Capability Mismatch                  False
+        [27:27]   Give Back Flag                       False
+        [30:28]   Object Position                      0
+
+Tx Source Cap (0x32)
+        [2:0]     numPDOs                      2
+        [9:9]     Enable Mask PDO1             Always Enabled
+        [17:16]   PP Switch for PDO1           PP_5V (internal)
+        [33:24]   PDO1: MaxCurrent or Power    3000 mA
+        [43:34]   PDO1: Min Voltage or Power   5000 mV
+        [53:44]   PDO1: Max Voltage            0 PeakCurrentType_100PercentIOC
+        [55:54]   PDO1: Supply Type            Fixed
+        [10:10]   Enable Mask PDO2             Always Enabled
+        [18:18]   PP Switch for PDO2           PP_HV (Internal)
+        [65:56]   PDO2: MaxCurrent or Power    3000 mA
+        [75:66]   PDO2: Min Voltage or Power   12000 mV
+        [85:76]   PDO2: Max Voltage            0 PeakCurrentType_100PercentIOC
+        [87:86]   PDO2: Supply Type            Fixed
+
+Tx Sink Cap (0x33)
+        [2:0]       numPDOs                            2
+        [17:8]      PDO1: Operating Current or Power   0 mA
+        [27:18]     PDO1: Min Voltage or Power         5000 mV
+        [37:28]     PDO1: Max Voltage                  0 PeakCurrentType_100PercentIOC
+        [39:38]     PDO1: Supply Type                  Fixed
+        [241:232]   PDO1: MaxCurrent or Power          0 mA
+        [251:242]   PDO1: MinCurrent or Power          0 mA
+        [262:262]   PDO1: Ask For Max                  Enabled
+        [49:40]     PDO2: Operating Current or Power   3000 mA
+        [59:50]     PDO2: Min Voltage or Power         20000 mV
+        [69:60]     PDO2: Max Voltage                  0 PeakCurrentType_100PercentIOC
+        [71:70]     PDO2: Supply Type                  Fixed
+        [273:264]   PDO2: MaxCurrent or Power          3000 mA
+        [283:274]   PDO2: MinCurrent or Power          3000 mA
+        [294:294]   PDO2: Ask For Max                  Disabled
+
+Rx Source Cap (0x30)
+list index out of range

@@ -1,0 +1,726 @@
+TPS65982 Debug Tool Version 2.0
+
+I2C Bitrate set to 400 kHz
+SPI Bitrate set to 8000 kHz
+
+Vendor ID (0x0)
+        [31:0]   Device ID   0x00000028
+
+Device ID (0x1)
+        [31:0]   Device ID   0x31454341
+
+Unique ID (0x5)
+        [127:0]   Device ID   0x574ab6fe7ac04eaab90ba89000116350L
+
+MODE    BOOT
+
+
+VERSION          0000.08.10
+
+
+Device Info
+
+
+Customer Use    0x0000
+
+
+Boot Flags (0x2d)
+        [0:0]     BootOk                      False
+        [1:1]     ExtPhvSwitch                True
+        [2:2]     DeadBatteryFlag             True
+        [3:3]     SpiFlashPresent             True
+        [4:4]     Region0                     True
+        [5:5]     Region1                     True
+        [6:6]     Region0Invalid              False
+        [7:7]     Region1Invalid              True
+        [8:8]     Region0FlashErr             False
+        [9:9]     Region1FlashErr             False
+        [11:11]   UartCRCFail                 False
+        [12:12]   Region0CRCFail              True
+        [13:13]   Region1CRCFail              False
+        [14:14]   CustomerOTPInvalid          False
+        [16:15]   OneCallI2COtpBits           0x1
+        [17:17]   App Cust Version Error      False
+        [18:18]   App Cust Length Error       True
+        [19:19]   App Cust CRC Error          False
+        [22:22]   Debug Ctl 1 state at boot   low
+        [23:23]   Debug Ctl 2 state at boot   low
+        [26:24]   DevNumber                   0
+        [27:27]   UartBoot                    False
+        [28:28]   UartOverflowErr             False
+        [29:29]   IntPhvSwitch                False
+        [30:30]   UartRetryErr                False
+        [31:31]   UartTimeoutErr              False
+        [33:32]   OTPValid                    2
+        [34:34]   SWD Disable                 False
+        [36:36]   Vout3v3Ctl                  True
+        [37:37]   WaitForVin3V3               False
+        [41:40]   OneCallI2cOtpBits           1
+        [54:50]   Vout3v3Threshold            6
+        [67:64]   REV_ID_Metal                0
+        [71:68]   REV_ID_Base                 0
+
+Status (0x1a)
+        [0:0]     PlugPresent            False
+        [3:1]     ConnState              NC
+        [4:4]     PlugOrientation        Upside_Up_CC_on_CC1
+        [5:5]     PortRole               PullDown_Active_or_Port_Disabled
+        [6:6]     DataRole               UFP_or_Port_Disabled
+        [7:7]     VconnEnabled           False
+        [9:8]     PP5V_Switch            Disabled
+        [11:10]   PPHV_Switch            Disabled
+        [13:12]   PPHVE_Switch           Disabled
+        [15:14]   PPCABLE_Switch         Disabled
+        [16:16]   OvercurrentCondition   False
+        [17:17]   HighVoltageCondition   False
+        [19:18]   PowerSource            Unknown
+        [21:20]   VBUSStatus             VBUS at VSafe0V (less than 0.8V)
+        [23:22]   UsbHostPresent         UsbHost_Not_Providing_Vbus
+        [25:24]   ActingAsLegacy         Not acting as legacy (PD Active)
+        [26:26]   GoToMinActive          False
+        [27:27]   Bist                   False
+        [28:28]   HighVoltageWarning     False
+        [29:29]   LowVoltageWarning      False
+
+Data Status (0x5f)
+        [0:0]     DataConnection               disconnected
+        [3:1]     ConnectionOrient             Up side up
+        [2:2]     ActiveCable                  Passive cable
+        [3:3]     Overcurrent                  off
+        [4:4]     USB2Connection               disconnected
+        [5:5]     USB3Connection               disconnected
+        [6:6]     USB3Speed                    USB Gen 1 (5 GBps)
+        [8:8]     DPConnection                 False
+        [11:10]   DPPinAssignment              E/F
+        [16:16]   TBTConnection                False
+        [19:17]   TBT Cable Type               No Thunderbolt Connection
+        [23:23]   ForceLSX                     False
+        [25:25]   TBT Gen1 (10 Gbps) support   0
+        [26:26]   TBT Gen2 (20 Gbps) support   0
+
+Control Config (0x29)
+        [1:0]     DisablePD                 Normal USB-PD Behavior
+        [2:2]     ExternallyPowered         False
+        [4:4]     ProcessSwapToSink         Disabled
+        [5:5]     InitSwapToSink            Disabled
+        [6:6]     ProcessSwapToSource       Disabled
+        [7:7]     InitSwapToSource          Disabled
+        [8:8]     RDOIntrusiveMode          Disabled
+        [9:9]     PDOIntrusiveMode          Disabled
+        [10:10]   ProcessVconnSwap          Disabled
+        [11:11]   InitiateVconnSwap         Disabled
+        [12:12]   ProcessSwapToUFP          Disabled
+        [13:13]   InitiateSwapToUFP         Disabled
+        [14:14]   ProcessSwapToDFP          Disabled
+        [15:15]   InitiateSwapToDFP         Disabled
+        [24:24]   AutomaticIDRequest        Disabled
+        [25:25]   AMIntrusiveMode           Disabled
+        [31:31]   ForceUSBGen1              off
+        [34:32]   I2C Timeout               0
+        [35:35]   AC Adapter Swap Disable   Disabled
+
+System Config (0x28)
+        [2:0]       PortInfo                           CONSUMER_CCPD
+        [5:3]       ReceptacleType                     UsbReceptacle_STD_USB2ONLY_TypeC_Receptacle
+        [7:6]       TypeCCurrent                       CC_IPU_STD
+        [9:8]       VCONNsupported                     VconnConfig_NotUsed
+        [14:14]     HighVoltageWarningLevel            False
+        [15:15]     LowVoltageWarningLevel             False
+        [21:16]     OvpTripPoint (in mV)               3840
+        [23:22]     OVPUsage                           OvpUsageType_OvpTripPoint
+        [25:24]     PP_5V0config                       SwitchConfig_DISABLED
+        [27:26]     PP_HVconfig                        SwitchConfig_DISABLED
+        [30:28]     PP_HVEconfig                       SwitchConfig_DISABLED
+        [32:32]     BC12enable                         Disabled
+        [33:33]     USBEPenable                        Disabled
+        [34:34]     USBRPenable                        Disabled
+        [36:35]     USB3rate                           SSSignallingSupport_USB2
+        [38:38]     AudioAccessorySupport              False
+        [39:39]     DebugAccessorySupport              False
+        [40:40]     PoweredAccessorySupport            False
+        [41:41]     RSense                             10 mOhm PP_HVE current sense resisitor
+        [42:42]     TrySRCSupport                      Disabled
+        [43:43]     BillboardAllowed                   False
+        [49:46]     PP_EXT Overcurrent Clamp Timeout   10 uS
+        [50:50]     PP_EXT Overcurrent Clamp Enable    Disabled
+        [56:51]     ResetZTimeoutCount                 0
+        [58:57]     ResetZTimeoutClock                 0
+        [61:59]     Vout3V3SupThresh                   Assert RESETZ if VOUT_3v3 < 1.125 V
+        [62:62]     Vout3V3enable                      Disabled
+        [64:64]     sinkSenseCCDisconnect              Disabled
+        [66:66]     setUvpTo4P5V                       Disabled
+        [69:67]     UvpTripPoint5V                     5%
+        [72:70]     UvpTripPointHV                     5%
+        [79:79]     UART Disabled                      False
+        [80:80]     Serial String Present              False
+        [82:81]     Product String Index               0
+        [84:83]     Manufacturer String Index          0
+        [87:85]     Billboard URL String Index         0
+        [91:88]     TBT Billboard String Index         0
+        [99:96]     DP Billboard String Index          0
+        [107:104]   Custom 1 Billboard String          0
+        [111:108]   Custom 2 Billboard String          0
+        [115:112]   Custom 3 Billboard String          0
+        [119:116]   Custom 4 Billboard String          0
+        [123:120]   PP_5V Overcurrent Clamp Timeout    10 uS
+        [124:124]   PP_5V Overcurrent Clamp Enable     Disabled
+        [131:128]   PP_HV Overcurrent Clamp Timeout    10 uS
+        [132:132]   PP_HV Overcurrent Clamp Enable     Disabled
+
+System Power Register (0x20)
+        [7:0]   System Power State   S0
+
+Power Status (0x3f)
+        [0:0]   PowerConnection   disconnected
+        [1:1]   SourceSink        TPS65982 is Source
+        [3:2]   Type-C Current    USB Def
+        [4:4]   BC12Detection     Disabled
+        [6:5]   BC12Status        SDP
+
+PD Status (0x40)
+        [1:0]     PlugDetails     USB type-C fully featured plug
+        [3:2]     CCPullUp        Not in CC pull-down mode / no CC pull-up detected
+        [5:4]     PortType        Consumer/Provider
+        [6:6]     PresentRole     Sink
+        [12:8]    SoftResetType   SoftResetType_None
+        [21:16]   HardResetType   HardReset_None
+
+Active PDO (0x34)
+        [9:0]     MaxCurrent or Power    0 mA (Max Current)
+        [19:10]   Min Voltage or Power   0 mV
+        [31:30]   Supply Type            Fixed
+        [33:32]   Peak current           PeakCurrentType_100PercentIOC
+        [38:38]   USBCommCapable         False
+        [39:39]   Externally Powred      False
+        [40:40]   USBSuspendSupported    False
+        [41:41]   Dual Role              False
+
+Active RDO (0x35)
+        [9:0]     Max/Min Operating Current or Power   0
+        [19:10]   Operating Current or Power           0
+        [24:24]   No USB Suspend                       False
+        [25:25]   USB Communications Capable           False
+        [26:26]   Capability Mismatch                  False
+        [27:27]   Give Back Flag                       False
+        [30:28]   Object Position                      0
+
+Sink Request RDO (0x36)
+        [9:0]     Max/Min Operating Current or Power   0
+        [19:10]   Operating Current or Power           0
+        [24:24]   No USB Suspend                       False
+        [25:25]   USB Communications Capable           False
+        [26:26]   Capability Mismatch                  False
+        [27:27]   Give Back Flag                       False
+        [30:28]   Object Position                      0
+
+Tx Source Cap (0x32)
+        [2:0]   numPDOs   0
+
+Tx Sink Cap (0x33)
+        [2:0]   numPDOs   0
+
+Rx Source Cap (0x30)
+        [2:0]   numPDOs   0
+
+Rx Sink Cap (0x31)
+        [2:0]   numPDOs   0
+
+Autonegotiate Sink (0x37)
+        [0:0]       Autonegotiate Enable            Disabled
+        [1:1]       Use Battery PDO                 False
+        [2:2]       Use Variable PDO                False
+        [3:3]       USB Comm Capable                False
+        [5:4]       Offer Priority                  Choose highest current offer
+        [6:6]       NoUSBSusp                       Allow USB Suspend (0)
+        [7:7]       GiveBack                        False
+        [17:8]      Operating Power                 0 mW
+        [27:18]     Max Operating Power             0 mW
+        [49:40]     Operating Current               0
+        [59:50]     Max Operating Current           0
+        [81:72]     Battery PDO: Max Power          0 mW
+        [91:82]     Battery PDO: Max Voltage        0 mV
+        [103:94]    Battery PDO: Min Power          0 mW
+        [113:104]   Non-Battery PDO: MaxCurrent     0
+        [123:114]   Non-Battery PDO: Max Voltage    0 mV
+        [125:124]   Non-Battery PDO: Peak Current   PeakCurrentType_100PercentIOC
+        [135:126]   Non-Battery PDO: Min Voltage    0 mV
+
+GPIO Configuration 1 (0x5c)
+        [17:0]      Output Enable Bitfield                                0x0000
+        [49:32]     Interrupt Enable Bitfield                             0x0000
+        [81:64]     Initial Value Bitfield                                0x0000
+        [113:96]    Open Drain Enable Bitfield                            0x0000
+        [145:128]   LDO3P3 (0) or VDDIO (1) Bitfield                      0x0000
+        [177:160]   Weak Pulldown Enable Bitfield                         0x0000
+        [209:192]   Weak Pullup Enable Bitfield                           0x0000
+        [241:224]   GPIO (1) or ADC (1) Pinmux Bitfield                   0x0000
+        [260:256]   Plug Event (0) mapped to GPIO number                  0
+        [263:263]   Plug Event (0) Enable                                 Disabled
+        [268:264]   Cable Orientation Event (1) mapped to GPIO number     0
+        [271:271]   Cable Orientation Event (1) Enable                    Disabled
+        [276:272]   Enable VOUT3V3 1 (2) mapped to GPIO number            0
+        [279:279]   Enable VOUT3V3 1 (2) Enable                           Disabled
+        [284:280]   Enable VOUT3V3 2 (3) mapped to GPIO number            0
+        [287:287]   Enable VOUT3V3 2 (3)                                  Disabled
+        [292:288]   Provider (0) Consumer (1) (4) mapped to GPIO number   0
+        [295:295]   Provider (0) Consumer (1) (4) Enable                  Disabled
+        [300:296]   Wake System (5) mapped to GPIO number                 0
+        [303:303]   Wake System (5) Enable                                Disabled
+        [308:304]   Fault Condition (6) mapped to GPIO number             0
+        [311:311]   Fault Condition (6) Enable                            Disabled
+        [316:312]   Boosterpack Config 1 (7) mapped to GPIO number        0
+        [319:319]   Boosterpack Config 1 (7) Enable                       Disabled
+        [324:320]   Boosterpack Config 2 (8) mapped to GPIO number        0
+        [327:327]   Boosterpack Config 2 (8) Enable                       Disabled
+        [332:328]   Boosterpack Config 3 (9) mapped to GPIO number        0
+        [335:335]   Boosterpack Config 3 (9) Enable                       Disabled
+        [340:336]   Bypass DP (10) mapped to GPIO number                  0
+        [343:343]   Bypass DP (10) Enable                                 Disabled
+        [348:344]   Bypass TBT (11) mapped to GPIO number                 0
+        [351:351]   Bypass TBT (11) Enable                                Disabled
+        [356:352]   Bypass BM (12) mapped to GPIO number                  0
+        [359:359]   Bypass BM (12) Enable                                 Disabled
+        [364:360]   Either DP or USB3 (13) mapped to GPIO number          0
+        [367:367]   Either DP or USB3 (13) Enable                         Disabled
+        [372:368]   DP Mode Selection (14) mapped to GPIO number          0
+        [375:375]   DP Mode Selection (14) Enable                         Disabled
+        [380:376]   Wake TPS65982 (15) mapped to GPIO number              0
+        [383:383]   Wake TPS65982 (15) Enable                             Disabled
+        [388:384]   Debug Modem (16) mapped to GPIO number                0
+        [391:391]   Debug Modem (16) Enable                               Disabled
+        [396:392]   Debug Squelch (17) mapped to GPIO number              0
+        [399:399]   Debug Squelch (17) Enable                             Disabled
+        [404:400]   Supply P5V (18) mapped to GPIO number                 0
+        [407:407]   Supply P5V (18) Enable                                Disabled
+        [412:408]   Supply PHV (19) mapped to GPIO number                 0
+        [415:415]   Supply PHV (19) Enable                                Disabled
+        [420:416]   Supply PHV EXT (20) mapped to GPIO number             0
+        [423:423]   Supply PHV EXT (20) Enable                            Disabled
+        [428:424]   Supply PPCable (21) mapped to GPIO number             0
+        [431:431]   Supply PPCable (21) Enable                            Disabled
+        [436:432]   Attached L (22) to GPIO number                        0
+        [439:439]   Attached L (22) Enable                                Disabled
+        [444:440]   VBUS Detect (23) mapped to GPIO number                0
+        [447:447]   VBUS Detect (23) Enable                               Disabled
+        [452:448]   Force DFU (24) mapped to GPIO number                  0
+        [455:455]   Force DFU (24) Enable                                 Disabled
+        [460:456]   Audio Mode Evt (25) mapped to GPIO number             0
+        [463:463]   Audio Mode Evt (25) Enable                            Disabled
+        [468:464]   Audio Mode L Evt (26) mapped to GPIO number           0
+        [471:471]   Audio Mode L Evt (26) Enable                          Disabled
+        [476:472]   P5V Overcurrent (27) mapped to GPIO number            0
+        [479:479]   P5V Overcurrent (27) Enable                           Disabled
+        [484:480]   Sink (0) Source (1) (28) mapped to GPIO number        0
+        [487:487]   Sink (0) Source (1) (28) Enable                       Disabled
+        [492:488]   USB3 Evt (29) mapped to GPIO number                   0
+        [495:495]   USB3 Evt (29) Enable                                  Disabled
+        [500:496]   USB2 Evt (30) mapped to GPIO number                   0
+        [503:503]   USB2 Evt (30) Enable                                  Disabled
+        [508:504]   DPx2 Evt (31) mapped to GPIO number                   0
+        [511:511]   DPx2 Evt (31) Enable                                  Disabled
+
+GPIO Configuration 2 (0x5d)
+        [4:0]       Consumer (0) Provider (1) (32) mapped to GPIO number   0
+        [7:7]       Consumer (0) Provider (1) (32) Enable                  Disabled
+        [12:8]      AMSEL (33) mapped to GPIO number                       0
+        [15:15]     AMSEL (33) Enable                                      Disabled
+        [20:16]     Aux OE (34) mapped to GPIO number                      0
+        [23:23]     Aux OE (34) Enable                                     Disabled
+        [28:24]     Enable PD HVE (35) mapped to GPIO number               0
+        [31:31]     Enable PD HVE (35) Enable                              Disabled
+        [36:32]     Power Src on PC (36) mapped to GPIO number             0
+        [39:39]     Power Src on PC (36) Enable                            Disabled
+        [44:40]     Current Limit Event (37) mapped to GPIO number         0
+        [47:47]     Current Limit Event (37) Enable                        Disabled
+        [52:48]     Sink Less Than 12V (38) mapped to GPIO number          0
+        [55:55]     Sink Less Than 12V (38) Enable                         Disabled
+        [60:56]     Sink 12V (39) mapped to GPIO number                    0
+        [63:63]     Sink 12V (39) Enable                                   Disabled
+        [68:64]     Sink Greater Than 12V (40) mapped to GPIO number       0
+        [71:71]     Sink Greater Than 12V (40) Enable                      Disabled
+        [76:72]     HS Enabled (41) mapped to GPIO number                  0
+        [79:79]     HS Enabled (41) Enable                                 Disabled
+        [84:80]     UFP (0) DFP (1) (42) mapped to GPIO number             0
+        [87:87]     UFP (0) DFP (1) (42) Enable                            Disabled
+        [92:88]     HS Not Enabled (43) mapped to GPIO number              0
+        [95:95]     HS Not Enabled (43) Enable                             Disabled
+        [100:96]    AC Detect (44) mapped to GPIO number                   0
+        [103:103]   AC Detect (44) Enable                                  Disabled
+        [108:104]   Consumer No AC (45) mapped to GPIO number              0
+        [111:111]   Consumer No AC (45) Enable                             Disabled
+        [116:112]   Reset Req (46) mapped to GPIO number                   0
+        [119:119]   Reset Req (46) Enable                                  Disabled
+        [124:120]   DFU Req L (47) mapped to GPIO number                   0
+        [127:127]   DFU Req L (47) Enable                                  Disabled
+        [132:128]   Debug Enable (48) mapped to GPIO number                0
+        [135:135]   Debug Enable (48) Enable                               Disabled
+        [140:136]   CC1 Connect (49) mapped to GPIO number                 0
+        [143:143]   CC1 Connect (49) Enable                                Disabled
+        [148:144]   Thunderbolt Connect (50) mapped to GPIO number         0
+        [151:151]   Thunderbolt Connect (50) Enable                        Disabled
+        [156:152]   Boosterpack Config 4 (51) mapped to GPIO number        0
+        [159:159]   Boosterpack Config 4 (51) Enable                       Disabled
+        [164:160]   Barrel Jack (52) mapped to GPIO number                 0
+        [167:167]   Barrel Jack (52) Enable                                Disabled
+        [172:168]   PDIO In 0 (53) mapped to GPIO number                   0
+        [175:175]   PDIO In 0 (53) Enable                                  Disabled
+        [180:176]   PDIO In 1 (54) mapped to GPIO number                   0
+        [183:183]   PDIO In 1 (54) Enable                                  Disabled
+        [188:184]   PDIO In 2 (55) mapped to GPIO number                   0
+        [191:191]   PDIO In 2 (55) Enable                                  Disabled
+        [196:192]   PDIO In 3 (56) mapped to GPIO number                   0
+        [199:199]   PDIO In 3 (56) Enable                                  Disabled
+        [204:200]   PDIO Out 0 (57) mapped to GPIO number                  0
+        [207:207]   PDIO Out 0 (57) Enable                                 Disabled
+        [212:208]   PDIO Out 1 (58) mapped to GPIO number                  0
+        [215:215]   PDIO Out 1 (58) Enable                                 Disabled
+        [220:216]   PDIO Out 2 (59) mapped to GPIO number                  0
+        [223:223]   PDIO Out 2 (59) Enable                                 Disabled
+        [228:224]   PDIO Out 3 (60) mapped to GPIO number                  0
+        [231:231]   PDIO Out 3 (60) Enable                                 Disabled
+        [236:232]   Source PDO 0 Negotiated (61) mapped to GPIO number     0
+        [239:239]   Source PDO 0 Negotiated (61) Enable                    Disabled
+        [244:240]   Source PDO 1 Negotiated (62) mapped to GPIO number     0
+        [247:247]   Source PDO 1 Negotiated (62) Enable                    Disabled
+        [252:248]   Source PDO 2 Negotiated (63) mapped to GPIO number     0
+        [255:255]   Source PDO 2 Negotiated (63) Enable                    Disabled
+        [260:256]   Source PDO 3 Negotiated (64) mapped to GPIO number     0
+        [263:263]   Source PDO 3 Negotiated (64) Enable                    Disabled
+        [268:264]   Source PDO Truth Table 1 (65) mapped to GPIO number    0
+        [271:271]   Source PDO Truth Table 1 (65) Enable                   Disabled
+        [276:272]   Source PDO Truth Table 2 (66) mapped to GPIO number    0
+        [279:279]   Source PDO Truth Table 2 (66) Enable                   Disabled
+        [284:280]   Source PDO Truth Table 3 (67) mapped to GPIO number    0
+        [287:287]   Source PDO Truth Table 3 (67) Enable                   Disabled
+        [292:288]   VBUS UVP Quick Detect (68) mapped to GPIO number       0
+        [295:295]   VBUS UVP Quick Detect (68) Enable                      Disabled
+        [300:296]   Force PDO Swap (69) mapped to GPIO number              0
+        [303:303]   Force PDO Swap (69) Enable                             Disabled
+        [308:304]   PD Negotiation Complete (70) mapped to GPIO number     0
+        [311:311]   PD Negotiation Complete (70) Enable                    Disabled
+        [316:312]   Load App Config Set 1 (71) mapped to GPIO number       0
+        [319:319]   Load App Config Set 1 (71) Enable                      Disabled
+        [324:320]   Load App Config Set 2 (72) mapped to GPIO number       0
+        [327:327]   Load App Config Set 2 (72) Enable                      Disabled
+        [332:328]   Load App Config Set 3 (73) mapped to GPIO number       0
+        [335:335]   Load App Config Set 3 (73) Enable                      Disabled
+        [340:336]   Enable USB EP (74) mapped to GPIO number               0
+        [343:343]   Enable USB EP (74) Enable                              Disabled
+        [348:344]   Sink on PP_HV or PP_EXT (75) mapped to GPIO number     0
+        [351:351]   Sink on PP_HV or PP_EXT (75) enable                    Disabled
+
+GPIO Status (0x72)
+        [384:384]   GPIO 0                        low
+        [385:385]   GPIO 1                        low
+        [386:386]   GPIO 2                        low
+        [387:387]   GPIO 3                        low
+        [388:388]   GPIO 4                        low
+        [389:389]   GPIO 5                        low
+        [390:390]   GPIO 6                        low
+        [391:391]   GPIO 7                        low
+        [392:392]   GPIO 8                        low
+        [393:393]   GPIO 9 (RESETZ)               low
+        [394:394]   GPIO 10 (BUS_PWRZ)            low
+        [395:395]   GPIO 11 (MRESET)              low
+        [396:396]   GPIO 12 (DEBUG_4)             low
+        [397:397]   GPIO 13 (DEBUG_3)             low
+        [398:398]   GPIO 14 (DEBUG_2)             low
+        [399:399]   GPIO 15 (DEBUG_1)             low
+        [400:400]   GPIO 16 (DEBUG_CTL_1)         low
+        [401:401]   GPIO 17 (DEBUG_CTL_2)         low
+        [402:402]   GPIO 18 (SPI_CSZ)             low
+        [403:403]   GPIO 19 (SPI_MOSI)            low
+        [404:404]   GPIO 20 (SPI_MISO)            low
+        [405:405]   GPIO 21 (SPI_CLK)             low
+        [31:0]      GPIO Set REG                  0x00000000
+        [63:32]     GPIO Output Enable REG        0x00000000
+        [95:64]     GPIO_RISE_INT_EN_REG          0x00000000
+        [127:96]    GPIO_FALL_INT_EN_REG          0x00000000
+        [159:128]   GPIO_RISE_EDGE_DET_EN_REG     0x00000000
+        [191:160]   GPIO_FALL_EDGE_DET_EN_REG     0x00000000
+        [223:192]   GPIO_SAMPLE_EN_REG            0x00000000
+        [255:224]   GPIO_LOGIC_LEVEL_CFG_REG      0x00000000
+        [287:256]   GPIO_OD_OE_REG                0x00000000
+        [319:288]   GPIO_PD_EN_REG                0x00000000
+        [351:320]   GPIO_PU_EN_REG                0x00000000
+        [383:352]   GPIO_TO_HI_Z_ADC_REG          0x00000000
+        [415:384]   GPIO_DATA_RDBACK_REG          0x00000000
+        [447:416]   GPIO_RISE_EDGE_DETECTED_REG   0x00000000
+        [479:448]   GPIO_FALL_EDGE_DETECTED_REG   0x00000000
+        [511:480]   GPIO_DUAL_EDGE_DETECTED_REG   0x00000000
+
+Tx Identity (0x47)
+        [2:0]       Num Valid SOP IDOs          0
+        [6:4]       Num Valid SOP Prime IDOs    0
+        [106:104]   USB SS Signalling           USB 2.0 Only
+        [107:107]   VBus Required               False
+        [108:108]   VConn Required              False
+        [111:109]   VConn Power                 1 W
+        [112:112]   SSRx 2 Directionality       Fixed
+        [112:112]   SSRx 1 Directionality       Fixed
+        [112:112]   SSTx 2 Directionality       Fixed
+        [112:112]   SSTx 1 Directionality       Fixed
+        [131:128]   AMA Firmware Version        0x0
+        [135:132]   AMA Hardware Version        0x0
+        [298:296]   USB SS Signalling           USB 2.0 Only
+        [299:299]   SOP" Controller Present     False
+        [300:300]   VBUS Through Cable          False
+        [302:301]   VBUS Current Capability     1.5 A
+        [303:303]   SSRx 2 Directionality       Fixed
+        [304:304]   SSRx 1 Directionality       Fixed
+        [305:305]   SSTx 2 Directionality       Fixed
+        [306:306]   SSTx 1 Directionality       Fixed
+        [308:307]   Cable Termination Type      Both Ends Passive, VConn Not Required
+        [312:309]   Cable Latency               reserved (0000b)
+        [313:313]   Type-C Plug or Receptacle   Plug
+        [315:314]   Type-C to Type-A/B/C        Type-A
+        [323:320]   Cable Firmware Version      0x0
+        [327:324]   Cable Hardware Version      0x0
+
+Rx SOP Identity (0x48)
+        [2:0]   NumValidIDOs   0
+        [7:6]   Response       Discover Identity Request Not Sent or Pending
+
+Rx SOP Prime Identity (0x49)
+        [2:0]       NumValidIDOs                0
+        [7:6]       Response                    Discover Identity Request Not Sent or Pending
+        [106:104]   USB SS Signalling           USB 2.0 Only
+        [107:107]   SOP" Controller Present     False
+        [108:108]   VBUS Through Cable          False
+        [110:109]   VBUS Current Capability     1.5 A
+        [111:111]   SSRx 2 Directionality       Fixed
+        [112:112]   SSRx 1 Directionality       Fixed
+        [113:113]   SSTx 2 Directionality       Fixed
+        [114:114]   SSTx 1 Directionality       Fixed
+        [116:115]   Cable Termination Type      Both Ends Passive, VConn Not Required
+        [120:117]   Cable Latency               reserved (0000b)
+        [121:121]   Type-C Plug or Receptacle   Plug
+        [123:122]   Type-C to Type-A/B/C        Type-A
+        [131:128]   Cable Firmware Version      0x0
+        [135:132]   Cable Hardware Version      0x0
+
+Rx non-Attn VDM (0x4f)
+        [2:0]   NumValidIDOs      0
+        [4:3]   SOP type          SOP
+        [7:5]   Sequence Number   0
+
+Rx Attn VDM (0x4e)
+        [2:0]   NumValidIDOs      0
+        [4:3]   SOP type          SOP
+        [7:5]   Sequence Number   0
+
+Alternate Mode Entry (0x38)
+        [15:0]    Highest Priority SVID   0x0000 (unknown)
+        [23:16]   Highest Priority mode   0
+        [47:32]   Second Priority SVID    0x0000 (unknown)
+        [55:48]   Second Priority mode    0
+        [79:64]   Lowest Priority SVID    0x0000 (unknown)
+        [87:80]   Lowest Priority mode    0
+
+Data Control (0x50)
+        [0:0]   Intel Thunderbolt (TM) Host Connected   False
+        [1:1]   Soft Reset                              False
+        [2:2]   Interrupt Acknowledge                   False
+        [3:3]   Status Not Acknowledged                 False
+        [7:4]   Status Not Acknowledged Reason          0
+
+Display Port Config (0x51)
+        [0:0]     Enable DP SID                         Disabled
+        [1:1]     Enable DP Mode                        Disabled
+        [9:8]     DP Port Capability                    Reserved
+        [10:10]   Supports DP v1.3 signalling           False
+        [11:11]   Supports USB Gen2 signalling          False
+        [14:14]   Receptacle Indication                 Plug
+        [15:15]   USB 2.0 Signalling Not Used           False
+        [16:16]   DFP_D Pin Configuration A Supported   False
+        [17:17]   DFP_D Pin Configuration B Supported   False
+        [18:18]   DFP_D Pin Configuration C Supported   False
+        [19:19]   DFP_D Pin Configuration D Supported   False
+        [20:20]   DFP_D Pin Configuration E Supported   False
+        [21:21]   DFP_D Pin Configuration F Supported   False
+        [24:24]   UFP_D Pin Configuration A Supported   False
+        [25:25]   UFP_D Pin Configuration B Supported   False
+        [26:26]   UFP_D Pin Configuration C Supported   False
+        [27:27]   UFP_D Pin Configuration D Supported   False
+        [28:28]   UFP_D Pin Configuration E Supported   False
+        [32:32]   Multifunction Preferred               False
+        [33:33]   MuxSwap                               False
+        [41:41]   Autoenter DisplayPort Mode            Disabled
+        [55:48]   messageIndex                          0
+
+Intel VID Config (0x52)
+        [0:0]     Enable Intel VID                  Disabled
+        [1:1]     Enable Thunderbolt (TM) Mode      Disabled
+        [8:8]     Vout_3v3 Required                 Disabled
+        [9:9]     Thunderbolt Emarker Override      Disabled
+        [10:10]   AN Minimum Power Required         Disabled
+        [16:16]   Legacy TBT Adapter                False
+        [34:32]   Cable Speed                       0
+        [36:35]   Cable Generation                  0
+        [37:37]   Cable Type                        0
+        [38:38]   Active Cable                      False
+        [39:39]   Cable Training Supported          False
+        [49:49]   Autoenter Thunderbolt (TM) Mode   Disabled
+        [63:56]   Message Index                     0
+
+Display Port Status (0x58)
+        [0:0]       DP SID Active                             False
+        [1:1]       DP Mode Active                            False
+        [8:8]       DP Status TX, DFP_D/UFP_D Connected       Neither DFP_D or UFP_D connected
+        [9:9]       DP Status TX, Power Low                   Adapter is functioning normally or disabled
+        [10:10]     DP Status TX, DP Enabled                  DP functionality is Disabled
+        [11:11]     DP Status TX, Multi-function Preferred    No Multi-function Preference
+        [12:12]     DP Status TX, USB Config Request          Maintain current configuration
+        [13:13]     DP Status TX, Exit DP Mode Request        Maintain current mode
+        [14:14]     DP Status TX, HPD State                   HPD_Low
+        [15:15]     DP Status TX, IRQ_HPD                     No IRQ_HPD since last status
+        [40:40]     DP Status RX, DFP_D/UFP_D Connected       Neither DFP_D or UFP_D connected
+        [41:41]     DP Status RX, Power Low                   Adapter is functioning normally or disabled
+        [42:42]     DP Status RX, DP Enabled                  DP functionality is Disabled
+        [43:43]     DP Status RX, Multi-function Preferred    No Multi-function Preference
+        [44:44]     DP Status RX, USB Config Request          Maintain current configuration
+        [45:45]     DP Status RX, Exit DP Mode Request        Maintain current mode
+        [46:46]     DP Status RX, HPD State                   HPD_Low
+        [47:47]     DP Status RX, IRQ_HPD                     No IRQ_HPD since last status
+        [73:72]     DP Configure, select config               Set config for USB
+        [77:74]     DP Configure, select signalling           Signalling Unspecified
+        [80:80]     DP Configure, UFP_U as DFP_D Pin Conf A   False
+        [81:81]     DP Configure, UFP_U as DFP_D Pin Conf B   False
+        [82:82]     DP Configure, UFP_U as DFP_D Pin Conf C   False
+        [83:83]     DP Configure, UFP_U as DFP_D Pin Conf D   False
+        [84:84]     DP Configure, UFP_U as DFP_D Pin Conf E   False
+        [85:85]     DP Configure, UFP_U as DFP_D Pin Conf F   False
+        [88:88]     DP Configure, UFP_U as UFP_D Pin Conf A   False
+        [89:89]     DP Configure, UFP_U as UFP_D Pin Conf B   False
+        [90:90]     DP Configure, UFP_U as UFP_D Pin Conf C   False
+        [91:91]     DP Configure, UFP_U as UFP_D Pin Conf D   False
+        [92:92]     DP Configure, UFP_U as UFP_D Pin Conf E   False
+        [105:104]   RX DP Cap, DP Port Capability             Reserved
+        [106:106]   RX DP Cap, Supports DP v1.3 signalling    False
+        [107:107]   RX DP Cap, Supports USB Gen2 signalling   False
+        [110:110]   RX DP Cap, Receptacle Indication          Plug
+        [111:111]   RX DP Cap, USB 2.0 Signalling Not Used    False
+        [112:112]   RX DP Cap, DFP_D Pin Conf A Supported     False
+        [113:113]   RX DP Cap, DFP_D Pin Conf B Supported     False
+        [114:114]   RX DP Cap, DFP_D Pin Conf C Supported     False
+        [115:115]   RX DP Cap, DFP_D Pin Conf D Supported     False
+        [116:116]   RX DP Cap, DFP_D Pin Conf E Supported     False
+        [117:117]   RX DP Cap, DFP_D Pin Conf F Supported     False
+        [120:120]   RX DP Cap, UFP_D Pin Conf A Supported     False
+        [121:121]   RX DP Cap, UFP_D Pin Conf B Supported     False
+        [122:122]   RX DP Cap, UFP_D Pin Conf C Supported     False
+        [123:123]   RX DP Cap, UFP_D Pin Conf D Supported     False
+        [124:124]   RX DP Cap, UFP_D Pin Conf E Supported     False
+
+Intel VID Status (0x59)
+        [0:0]    Intel VID Active                    False
+        [1:1]    Thunderbolt (TM) Mode Active        False
+        [39:8]   Thunderbolt Configuration Message   0x00000000
+
+CCn State (0x69)
+        [1:0]     CCn Pin for PD      Not Connected
+        [10:8]    CC1 State           Not Connected
+        [18:16]   CC2 State           Not Connected
+        [31:24]   Type-C Port State   SRC_STATE_DISABLED
+
+Sleep Config (0x70)
+        [0:0]    Sleep mode enable     Disabled
+        [2:1]    Sleep Wait time       Enter Sleep Mode When Possible
+        [3:3]    SleepAt5V             False
+        [15:8]   Relax I2C Threshold   S0
+
+Mux Status (Debug) (0x6e)
+        [16:14]   MUX RFU Selection         Crossbar Passthrough
+        [17:17]   MUX RFU Direction         Cross bar is flipped
+        [18:18]   MUX RFU Enable            Disabled
+        [23:21]   Mux Bottom D+/D- Map      HiZ on output
+        [24:24]   MUX Bottom D+/D- Enable   Disabled
+        [29:27]   Mux Top D+/D- Map         HiZ on output
+        [30:30]   MUX Top D+/D- Enable      Disabled
+
+TI VID Status (0x5b)
+        [0:0]   TI SVID Alternate Mode Entered   False
+        [1:1]   PDIO Mode Entered                False
+
+User VID Config (0x4a)
+        [0:0]       User VID Enabled                Disabled
+        [15:8]      Billboard Message Index         0x00
+        [31:16]     User Alternate Mode SVID        0x0000
+        [32:32]     User AM Mode 1 Enabled          Disabled
+        [40:40]     User AM Mode 2 Enabled          Disabled
+        [48:48]     User AM Mode 3 Enabled          Disabled
+        [56:56]     User AM Mode 4 Enabled          Disabled
+        [64:64]     Autoenter User AM Mode 1        Disabled
+        [72:72]     Autoenter User AM Mode 2        Disabled
+        [80:80]     Autoenter User AM Mode 3        Disabled
+        [88:88]     Autoenter User AM Mode 4        Disabled
+        [96:96]     Autosend VDM User AM Mode 1     Disabled
+        [104:104]   Autosend VDM User AM Mode 2     Disabled
+        [112:112]   Autosend VDM User AM Mode 3     Disabled
+        [120:120]   Autosend VDM User AM Mode 4     Disabled
+        [128:128]   Load Appconfig User AM Mode 1   Disabled
+        [136:136]   Load Appconfig User AM Mode 2   Disabled
+        [144:144]   Load Appconfig User AM Mode 3   Disabled
+        [152:152]   Load Appconfig User AM Mode 4   Disabled
+        [191:160]   AM Mode Value for Position 1    0x00000000
+        [223:192]   AM Mode Value for Position 2    0x00000000
+        [255:224]   AM Mode Value for Position 3    0x00000000
+        [287:256]   AM Mode Value for Position 4    0x00000000
+        [319:288]   Autosend Data VDO 1             0x00000000
+        [351:320]   Autosend Data VDO 2             0x00000000
+        [383:352]   Autosend Data VDO 3             0x00000000
+        [415:384]   Autosend Data VDO 4             0x00000000
+        [447:416]   Autosend Data VDO 5             0x00000000
+        [479:448]   Autosend Data VDO 6             0x00000000
+        [495:480]   Autosend Vendor Use Data        0x0000
+        [503:496]   Autosend VDO Count              0
+
+User VID Status (0x57)
+        [0:0]   User SVID Alternate Mode Entered   False
+        [1:1]   Mode 1 Entered                     False
+        [2:2]   Mode 2 Entered                     False
+        [3:3]   Mode 3 Entered                     False
+        [4:4]   Mode 4 Entered                     False
+
+Rx User SVID Attn VDM (0x60)
+        [2:0]   NumValidIDOs      0
+        [4:3]   SOP type          SOP
+        [7:5]   Sequence Number   0
+
+Rx User SVID non-Attn VDM (0x61)
+        [2:0]   NumValidIDOs      0
+        [4:3]   SOP type          SOP
+        [7:5]   Sequence Number   0
+ADC
+        THERMAL_SENSE           = Raw value = 0.000000 V
+        VBUS                    = 0.000000 Volts
+        SENSEP                  = 0.000000 Volts
+        I_PP_EXT                = 0.000000 Amps
+        PP_HV                   = 0.000000 Volts
+        I_PP_HV                 = 0.000000 Amps
+        PP_5V0                  = 0.000000 Volts
+        I_PP_5V0                = 0.000000 Amps
+        CC1_BY5                 = 0.000000 Volts
+        I_CC                    = 0.000000 Amps
+        CC2_BY5                 = 0.000000 Volts
+        GPIO_5_RAW              = 0.000000 Volts
+        CC1_BY2                 = 0.000000 Volts
+        CC2_BY2                 = 0.000000 Volts
+        PP_CABLE                = 0.000000 Volts
+        IN_3P3V                 = 0.000000 Volts
+        OUT_3P3V                = 0.000000 Volts
+        BRICKID_RFU             = 0.000000 Volts
+        V1P8_A                  = 0.000000 Volts
+        V1P8_D                  = 0.000000 Volts
+        V3P3                    = 0.000000 Volts
+        I2CADDR                 = 0.000000 Volts
+        GPIO_0                  = 0.000000 Volts
+        GPIO_1                  = 0.000000 Volts
+        GPIO_2                  = 0.000000 Volts
+        GPIO_3                  = 0.000000 Volts
+        GPIO_4                  = 0.000000 Volts
+        GPIO_5                  = 0.000000 Volts
+        GPIO_6                  = 0.000000 Volts
+        GPIO_7                  = 0.000000 Volts
+        GPIO_8                  = 0.000000 Volts
+        GPIO_10 (BUSPOWER_Z)    = 0.000000 Volts
